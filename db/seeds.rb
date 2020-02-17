@@ -21,8 +21,8 @@
   puts 1
 
   mlee = User.create(
-    username: 'mlee', 
-    email: 'mlee@email.com', 
+    username: 'ml', 
+    email: 'ml@email.com', 
     password_digest: BCrypt::Password.create('password'),
     cash: '5001.0'
   )
@@ -37,6 +37,15 @@
   )
 
   puts 3
+
+  rj = User.create(
+    username: 'jz', 
+    email: 'jz@email.com', 
+    password_digest: BCrypt::Password.create('password'),
+    cash: '5003.0'
+  )
+
+  puts 4
 
   puts "Creating stocks: "
 
@@ -135,5 +144,37 @@
   )
 
   puts "User 3 stocks created."
+
+    # jz's stocks
+
+    C3 = Stock.create(
+      symbol: 'C',
+      shares: 100,
+      price: 58.79,
+      user_id: 4
+    )
+  
+    A3 = Stock.create(
+      symbol: 'A',
+      shares: 90,
+      price: 40.82,
+      user_id: 4
+    )
+  
+    S3 = Stock.create(
+      symbol: 'S',
+      shares: 120,
+      price: 10.70,
+      user_id: 4
+    )
+  
+    H3 = Stock.create(
+      symbol: 'H',
+      shares: 40,
+      price: 42.20,
+      user_id: 4
+    )
+  
+    puts "User 4 stocks created."
 
   puts 'Seeding complete.'
