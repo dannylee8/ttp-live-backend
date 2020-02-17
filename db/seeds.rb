@@ -166,7 +166,8 @@
       shares: 120,
       price: 10.70,
       user_id: 4
-  
+    )
+    
     H4 = Stock.create(
       symbol: 'H',
       shares: 40,
