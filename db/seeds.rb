@@ -151,28 +151,28 @@
       symbol: 'C',
       shares: 100,
       price: 58.79,
-      user_id: jm.id
+      user_id: jz.id
     )
   
     A4 = Stock.create(
       symbol: 'A',
       shares: 90,
       price: 40.82,
-      user_id: jm.id
+      user_id: jz.id
     )
   
     S4 = Stock.create(
       symbol: 'S',
       shares: 120,
       price: 10.70,
-      user_id: jm.id
+      user_id: jz.id
     )
 
     H4 = Stock.create(
       symbol: 'H',
       shares: 40,
       price: 42.20,
-      user_id: jm.id
+      user_id: jz.id
     )
   
     puts "User 4 stocks created."
