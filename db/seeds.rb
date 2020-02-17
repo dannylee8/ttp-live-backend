@@ -38,7 +38,7 @@
 
   puts 3
 
-  rj = User.create(
+  jz = User.create(
     username: 'jz', 
     email: 'jz@email.com', 
     password_digest: BCrypt::Password.create('password'),
