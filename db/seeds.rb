@@ -147,28 +147,27 @@
 
     # jz's stocks
 
-    C3 = Stock.create(
+    C4 = Stock.create(
       symbol: 'C',
       shares: 100,
       price: 58.79,
       user_id: 4
     )
   
-    A3 = Stock.create(
+    A4 = Stock.create(
       symbol: 'A',
       shares: 90,
       price: 40.82,
       user_id: 4
     )
   
-    S3 = Stock.create(
+    S4 = Stock.create(
       symbol: 'S',
       shares: 120,
       price: 10.70,
       user_id: 4
-    )
   
-    H3 = Stock.create(
+    H4 = Stock.create(
       symbol: 'H',
       shares: 40,
       price: 42.20,
