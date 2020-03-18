@@ -4,6 +4,7 @@ class UserSerializer < ActiveModel::Serializer
   has_many :stocks
 
   def portfolio_cost
+    # sum up the original cost of the portfolio's stocks
     total = 0
     self.object.stocks.each do |stock|
       total += stock.price * stock.shares
@@ -11,14 +12,13 @@ class UserSerializer < ActiveModel::Serializer
     return total
   end 
 
-  # sum up value of entire portfolio
   def portfolio_current_value
-    total = 0
+    # sum up value of entire portfolio
+    total = 0;
 
-    # client = IEX::Api::Client.new(
+    #   live server:
     #   publishable_token: 'pk_9b7b0939edbc416e8ecee6a94c193697',
     #   endpoint: 'https://cloud.iexapis.com/v1'
-    #   ) 
 
     client = IEX::Api::Client.new(
       publishable_token: 'Tpk_f60d00f3b3774527b14ddc2510d54b18',
